@@ -71,10 +71,10 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="about.html"> درباره ما </a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">دندانپزشک</a>
+                            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown">دندانپزشک</a>
                             <ul class="dropdown-menu fade-up">
                                 <li><a class="dropdown-item " href="dentist.html">دندانپزشک</a></li>
-                                <li><a class="dropdown-item" href="dentist-single.html"> جزییات صفحه دندانپزشک</a></li>
+                                <li><a class="dropdown-item" href="dentist-single.html"> جزئیات صفحه دندانپزشک</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -82,13 +82,8 @@
                             <ul class="dropdown-menu fade-up">
                                 <li><a class="dropdown-item" href="about.html">درباره ما</a></li>
                                 <li><a class="dropdown-item" href="team.html">اعضای تیم</a></li>
-                                <li><a class="dropdown-item" href="pricing.html">قیمت گذاری ما</a></li>
-                                <li><a class="dropdown-item" href="appointment.html">وقت ملاقات</a></li>
                                 <li><a class="dropdown-item" href="gallery.html">گالری</a></li>
                                 <li><a class="dropdown-item" href="faq.html">سوالات متداول</a></li>
-                                <li><a class="dropdown-item" href="login.html">ورود</a></li>
-                                <li><a class="dropdown-item" href="register.html">ثبت نام</a></li>
-                                <li><a class="dropdown-item" href="forgot-password.html">فراموشی رمز عبور</a></li>
                                 <li><a class="dropdown-item" href="404.html">404 ارور</a></li>
                                 <li><a class="dropdown-item" href="coming-soon.html">بزودی</a></li>
                                 <li><a class="dropdown-item" href="terms.html">شرایط استفاده از خدمات</a></li>
@@ -96,7 +91,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="service.html">خدمات</a>
+                            <a class="nav-link active" href="service.html">خدمات</a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">تماس با ما</a></li>
                     </ul>
@@ -117,7 +112,9 @@
     <button class="close-search"><span class="far fa-times"></span></button>
     <form action="#">
         <div class="form-group">
-            <input type="search" name="search-field" placeholder="اینجا جستجو کنید..." required>
+            <label>
+                <input type="search" name="search-field" placeholder="اینجا جستجو کنید..." required>
+            </label>
             <button type="submit"><i class="far fa-search"></i></button>
         </div>
     </form>
@@ -337,16 +334,14 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="footer-widget-box list">
-                        <h4 class="footer-widget-title">ساعت افتتاحیه</h4>
+                        <h4 class="footer-widget-title">ساعت های کاری</h4>
                         <div class="footer-opening">
                             <ul>
+                                <li>شنبه: <span>08:00 - 18:00</span></li>
+                                <li>یکشنبه: <span>08:00 - 18:00</span></li>
                                 <li>دوشنبه: <span>08:00 - 18:00</span></li>
                                 <li>سشنبه: <span>08:00 - 18:00</span></li>
                                 <li>چهارشنبه: <span>08:00 - 18:00</span></li>
-                                <li>پنچشنبه: <span>08:00 - 18:00</span></li>
-                                <li>جمعه: <span>08:00 - 18:00</span></li>
-                                <li>شنبه: <span>08:00 - 18:00</span></li>
-                                <li>یکشنبه: <span>08:00 - 18:00</span></li>
                             </ul>
                         </div>
                     </div>
@@ -359,7 +354,7 @@
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <p class="copyright-text">
-                        &copy; کپی رایت <span id="date"></span> <a href="#"> دنتاکس </a> تمامی حقوق محفوظ است.
+                        &copy; کپی رایت <span id="date"></span><a href="#">دنتاکس </a>تمامی حقوق محفوظ است.
                     </p>
                 </div>
                 <div class="col-lg-6 align-self-center">
@@ -391,3 +386,4 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+

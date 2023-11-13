@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>about me</title>
+    <title>Gallery</title>
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -71,24 +71,19 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="about.html"> درباره ما </a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">دندانپزشک</a>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">دندانپزشک</a>
                             <ul class="dropdown-menu fade-up">
                                 <li><a class="dropdown-item " href="dentist.html">دندانپزشک</a></li>
-                                <li><a class="dropdown-item" href="dentist-single.html"> جزییات صفحه دندانپزشک</a></li>
+                                <li><a class="dropdown-item" href="dentist-single.html"> جزئیات صفحه دندانپزشک</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">صفحات</a>
+                            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">صفحات</a>
                             <ul class="dropdown-menu fade-up">
                                 <li><a class="dropdown-item" href="about.html">درباره ما</a></li>
                                 <li><a class="dropdown-item" href="team.html">اعضای تیم</a></li>
-                                <li><a class="dropdown-item" href="pricing.html">قیمت گذاری ما</a></li>
-                                <li><a class="dropdown-item" href="appointment.html">وقت ملاقات</a></li>
                                 <li><a class="dropdown-item" href="gallery.html">گالری</a></li>
                                 <li><a class="dropdown-item" href="faq.html">سوالات متداول</a></li>
-                                <li><a class="dropdown-item" href="login.html">ورود</a></li>
-                                <li><a class="dropdown-item" href="register.html">ثبت نام</a></li>
-                                <li><a class="dropdown-item" href="forgot-password.html">فراموشی رمز عبور</a></li>
                                 <li><a class="dropdown-item" href="404.html">404 ارور</a></li>
                                 <li><a class="dropdown-item" href="coming-soon.html">بزودی</a></li>
                                 <li><a class="dropdown-item" href="terms.html">شرایط استفاده از خدمات</a></li>
@@ -118,7 +113,9 @@
     <button class="close-search"><span class="far fa-times"></span></button>
     <form action="#">
         <div class="form-group">
-            <input type="search" name="search-field" placeholder="اینجا جستجو کنید..." required>
+            <label>
+                <input type="search" name="search-field" placeholder="اینجا جستجو کنید..." required>
+            </label>
             <button type="submit"><i class="far fa-search"></i></button>
         </div>
     </form>
@@ -138,8 +135,8 @@
                     <li data-filter=".cat5">ایمپلنت ها</li>
                 </ul>
             </div>
-            <div class="row filter-box popup-gallery" style="position: relative; height: 892.166px;">
-                <div class="col-md-6 col-lg-4 filter-item cat1 cat2" style="position: absolute; left: 0px; top: 0px;">
+            <div class="row filter-box popup-gallery" style="position: relative; height: 892px;">
+                <div class="col-md-6 col-lg-4 filter-item cat1 cat2" style="position: absolute; left: 0; top: 0;">
                     <div class="case-item">
                         <div class="case-img">
                             <img class="img-fluid" src="assets/img/gallery/01.jpg" alt="">
@@ -150,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 filter-item cat2 cat3" style="position: absolute; left: 395px; top: 0px;">
+                <div class="col-md-6 col-lg-4 filter-item cat2 cat3" style="position: absolute; left: 395px; top: 0;">
                     <div class="case-item">
                         <div class="case-img">
                             <img class="img-fluid" src="assets/img/gallery/02.jpg" alt="">
@@ -162,7 +159,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 filter-item cat3 cat4 cat5"
-                     style="position: absolute; left: 790px; top: 0px;">
+                     style="position: absolute; left: 790px; top: 0;">
                     <div class="case-item">
                         <div class="case-img">
                             <img class="img-fluid" src="assets/img/gallery/03.jpg" alt="">
@@ -174,7 +171,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 filter-item cat2 cat4"
-                     style="position: absolute; left: 0px; top: 446.083px;">
+                     style="position: absolute; left: 0; top: 446px;">
                     <div class="case-item">
                         <div class="case-img">
                             <img class="img-fluid" src="assets/img/gallery/04.jpg" alt="">
@@ -186,7 +183,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 filter-item cat1 cat4 cat5"
-                     style="position: absolute; left: 395px; top: 446.083px;">
+                     style="position: absolute; left: 395px; top: 446px;">
                     <div class="case-item">
                         <div class="case-img">
                             <img class="img-fluid" src="assets/img/gallery/05.jpg" alt="">
@@ -198,7 +195,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 filter-item cat4 cat3"
-                     style="position: absolute; left: 790px; top: 446.083px;">
+                     style="position: absolute; left: 790px; top: 446px;">
                     <div class="case-item">
                         <div class="case-img">
                             <img class="img-fluid" src="assets/img/gallery/06.jpg" alt="">
@@ -263,16 +260,14 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="footer-widget-box list">
-                        <h4 class="footer-widget-title">ساعت افتتاحیه</h4>
+                        <h4 class="footer-widget-title">ساعت های کاری</h4>
                         <div class="footer-opening">
                             <ul>
+                                <li>شنبه: <span>08:00 - 18:00</span></li>
+                                <li>یکشنبه: <span>08:00 - 18:00</span></li>
                                 <li>دوشنبه: <span>08:00 - 18:00</span></li>
                                 <li>سشنبه: <span>08:00 - 18:00</span></li>
                                 <li>چهارشنبه: <span>08:00 - 18:00</span></li>
-                                <li>پنچشنبه: <span>08:00 - 18:00</span></li>
-                                <li>جمعه: <span>08:00 - 18:00</span></li>
-                                <li>شنبه: <span>08:00 - 18:00</span></li>
-                                <li>یکشنبه: <span>08:00 - 18:00</span></li>
                             </ul>
                         </div>
                     </div>
@@ -285,7 +280,7 @@
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <p class="copyright-text">
-                        &copy; کپی رایت <span id="date"></span> <a href="#"> دنتاکس </a> تمامی حقوق محفوظ است.
+                        &copy; کپی رایت <span id="date"></span><a href="#">دنتاکس </a>تمامی حقوق محفوظ است.
                     </p>
                 </div>
                 <div class="col-lg-6 align-self-center">
@@ -318,4 +313,3 @@
 </body>
 </html>
 
-</html>
