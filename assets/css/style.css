@@ -4,10 +4,12 @@ Description     : Dentist And Dental Clinic HTML5 Template
 Author          : Themesland
 Version         : 1.1
 =======================================================*/
+
 /* ===================
 fonts
 ====================== */
-@import 'googleFonts.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap');
 @charset "UTF-8";
 @font-face {
     font-family: "irsans-b";
@@ -388,11 +390,57 @@ fonts
     font-family: "aviny";
     font-style: normal;
     font-weight: 500;
-    url(../fonts/aviny/aviny-700.woff2) format("woff2"),
+    src: url(../fonts/aviny/aviny.otf);
+    src: url(../fonts/aviny/aviny.ttf) format("embedded-opentype"),
+    url(../fonts/aviny/aviny.woff) format("woff"),
+    url(../fonts/aviny/aviny.woff2) format("woff2"),
+    url(../fonts/aviny/aviny-700.woff2) format("truetype");
+}
+@font-face {
+    font-family: "gandom";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/gandom/Gandom.eot);
+    src: url(../fonts/gandom/Gandom.ttf) format("embedded-opentype"),
+    url(../fonts/gandom/Gandom.woff) format("woff");
+}
+@font-face {
+    font-family: "shabnam";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/shabnam/Shabnam.eot);
+    src: url(../fonts/shabnam/Shabnam.ttf) format("embedded-opentype"),
+    url(../fonts/shabnam/Shabnam.woff) format("woff");
+}
+@font-face {
+    font-family: "tanha";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/tanha/Tanha.eot);
+    src: url(../fonts/tanha/Tanha.ttf) format("embedded-opentype"),
+    url(../fonts/tanha/Tanha.woff) format("woff"),
+    url(../fonts/tanha/Tanha.woff2) format("woff2");
+}
+@font-face {
+    font-family: "sahel";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/sahel/Sahel.eot);
+    src: url(../fonts/sahel/Sahel.ttf) format("embedded-opentype"),
+    url(../fonts/sahel/Sahel.woff) format("woff");
+}
+@font-face {
+    font-family: "samim";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/samim/Samim.eot);
+    src: url(../fonts/samim/Samim.ttf) format("embedded-opentype"),
+    url(../fonts/samim/Samim.woff) format("woff");
 }
 /* ===================
 general css
 ====================== */
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -400,6 +448,7 @@ general css
 * {
     scroll-behavior: inherit !important;
 }
+
 html, body {
     height: auto;
     width: 100%;
@@ -408,6 +457,7 @@ html, body {
     overflow-x: hidden;
     box-sizing: border-box;
 }
+
 body {
     font-family: "irsans", irsans, sans-serif;
     font-style: normal;
@@ -416,10 +466,12 @@ body {
     color: #757F95;
     line-height: 1.8;
 }
+
 a {
     color: #14212B;
     display: inline-block;
 }
+
 a, a:active, a:focus, a:hover {
     outline: none;
     -webkit-transition: all 0.3s ease-in-out;
@@ -429,16 +481,20 @@ a, a:active, a:focus, a:hover {
     transition: all 0.3s ease-in-out;
     text-decoration: none;
 }
+
 a:hover {
     color: #0049D0;
 }
+
 ul {
     margin: 0;
     padding: 0;
 }
+
 li {
     list-style: none;
 }
+
 h1, h2, h3, h4, h5, h6 {
     color: #204066;
     margin: 0;
@@ -446,12 +502,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "irsans", irsans, sans-serif;
     line-height: 1.2;
 }
+
 h1 {
     font-size: 40px;
 }
+
 h2 {
     font-size: 35px;
 }
+
 h3 {
     font-size: 28px;
 }
@@ -914,7 +973,7 @@ theme button
     border: none;
     border-radius: 8px;
     background: #1DBFCC;
-    box-shadow: 0 3px 24px rgb(0 0 0);
+    box-shadow: 0 3px 24px rgba(0 0 0 1);
 }
 
 .theme-btn::before {
@@ -985,7 +1044,7 @@ scroll-top css
     border-radius: 50px;
     line-height: 50px;
     text-align: center;
-    box-shadow: 0 3px 24px rgb(0 0 0);
+    box-shadow: 0 3px 24px rgba(0 0 0 1);
     transition: all .5s ease-in-out;
 }
 
@@ -1100,7 +1159,7 @@ nav menu css
         border: none;
         border-radius: 0;
         width: 220px;
-        box-shadow: 0 3px 24px rgb(0 0 0);
+        box-shadow: 0 3px 24px rgba(0 0 0 1);
         text-align: right;
     }
     .navbar .nav-item .dropdown-menu li {
@@ -1598,7 +1657,7 @@ about css
     right: -20px;
     bottom: 50px;
     border-radius: 10px;
-    box-shadow: 0 3px 24px rgb(0 0 0);
+    box-shadow: 0 3px 24px rgba(0 0 0 1);
 }
 
 .about-left-icon{
@@ -1756,7 +1815,7 @@ service css
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
-    box-shadow: 0 0 40px 5px rgba(0 ,0 ,0, .5);
+    box-shadow: 0 0 40px 5px rgba(0 0 0 .5);
 }
 
 .service-content-info{
@@ -2227,7 +2286,7 @@ Case studies css
     font-size: 22px;
     margin-top: 50px;
     opacity: 0;
-    box-shadow: 0 3px 24px rgba(0, 0, 0, 1);
+    box-shadow: 0 3px 24px rgba(0 0 0 1);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transition-delay: 0.3s;
@@ -2298,7 +2357,7 @@ blog css
     margin-bottom: 25px;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 40px 5px rgba(0 ,0, 0, .5);
+    box-shadow: 0 0 40px 5px rgba(0 0 0 .5);
     transition: all .5s ease-in-out;
 }
 
@@ -2454,7 +2513,7 @@ blog single css
     justify-content: end;
     align-items: center;
     background: #fff;
-    box-shadow: 0 0 40px 5px rgba(0 ,0 ,0, .5);
+    box-shadow: 0 0 40px 5px rgba(0 0 0 .5);
     margin: 50px 0;
     padding: 20px;
     border-radius: 10px;
@@ -2575,7 +2634,7 @@ blog single css
         flex-direction: column;
         text-align: center;
         padding: 30px 0;
-        box-shadow: 0 0 40px 5px rgba(0 ,0 ,0, .5);
+        box-shadow: 0 0 40px 5px rgba(0 0 0 .5);
         margin-bottom: 30px;
         border-radius: 10px;
     }
@@ -2593,7 +2652,7 @@ sidebar css
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 40px 5px rgba(0 ,0 ,0, .5);
+    box-shadow: 0 0 40px 5px rgba(0 0 0 .5);
 }
 
 .widget .widget-title {
@@ -2742,7 +2801,7 @@ contact us css
     padding: 50px 30px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 40px 5px rgba(0 ,0 ,0, .5);
+    box-shadow: 0 0 40px 5px rgba(0 0 0 .5);
     position: relative;
 }
 
@@ -2859,7 +2918,7 @@ quote css
     padding: 40px;
     border-radius: 10px;
     margin-top: 80px;
-    box-shadow: 0 0 40px 5px rgba(0 ,0 ,0, .3);
+    box-shadow: 0 0 40px 5px rgba(0 0 0 .3);
 }
 
 .quote-thum {
@@ -2951,7 +3010,7 @@ team css
 .team-item {
     border-radius: 15px;
     margin-bottom: 80px;
-    box-shadow: 0 3px 24px rgba(0 ,0 ,0, 1);
+    box-shadow: 0 3px 24px rgba(0 0 0 1);
     position: relative;
     transition: all .5s ease-in-out;
 }
@@ -2975,7 +3034,7 @@ team css
     overflow: hidden;
     z-index: 1;
     border-radius: 10px;
-    box-shadow: 0 3px 24px rgba(0 ,0 ,0, 1);
+    box-shadow: 0 3px 24px rgba(0 0 0 1);
 }
 
 .team-content::before{
@@ -3130,7 +3189,7 @@ step/process css
     border: 2px solid #FEBC35;
     padding: 5px;
     margin-bottom: 30px;
-    box-shadow: 0 3px 24px rgba(0 ,0 ,0, 1);
+    box-shadow: 0 3px 24px rgba(0 0 0 1);
 }
 
 .process-single .icon img {
@@ -3421,7 +3480,7 @@ faq css
     border: none;
     margin-bottom: 30px;
     border-radius: 10px !important;
-    box-shadow: 0 0 40px 5px rgba(0 ,0 ,0 ,.5);
+    box-shadow: 0 0 40px 5px rgba(0 0 0 .5);
 }
 
 .faq-area .accordion-item span {
@@ -3443,7 +3502,7 @@ faq css
 .faq-area .accordion-button:not(.collapsed) {
     color: #1DBFCC;
     background-color: #fff;
-    box-shadow: inset 0 -1px 0 rgba(0 ,0 ,0, 1);
+    box-shadow: inset 0 -1px 0 rgba(0 0 0 1);
 }
 
 .accordion-button {
@@ -3637,7 +3696,7 @@ auth css
 .login-form {
     padding: 50px;
     border-radius: 8px;
-    box-shadow: 0 0 40px 5px rgba(0 ,0 ,0, .5);
+    box-shadow: 0 0 40px 5px rgba(0 0 0 .5);
 }
 
 .login-form .login-header {
@@ -3843,7 +3902,7 @@ coming soon css
     padding: 20px;
     margin: 10px;
     position: relative;
-    box-shadow: 0 3px 24px rgba(0 ,0 ,0, 1);
+    box-shadow: 0 3px 24px rgba(0 0 0 1);
     z-index: 1;
 }
 
@@ -4131,13 +4190,15 @@ footer css
     font-size: 16px;
     margin-bottom: 15px;
 }
+
 .footer-contact li a {
     color: #f5faff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+
 }
 .footer-contact li a span{
-    /*float: inline-start;*/
+    float: inline-start;
     direction: ltr;
 }
 
